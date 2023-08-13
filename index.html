@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRGEN</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+	</script>
+
+</head>
+ <link rel="stylesheet" href="styles.css">
+<!--google fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,300&family=Montserrat:ital,wght@0,200;0,700;1,300&family=Sacramento&family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+ <script src="https://kit.fontawesome.com/3c06348bc0.js" crossorigin="anonymous"></script> <!--font - awsome toolKit-->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+<body>
+    <div id="loader"></div>
+    <section id="title">
+        <div class="container-fluid"></div>
+    <!--navbar-->
+    <nav class="navbar  navbar-expand-lg   navbar-dark" >
+       <a href="index.html"> <i class="fa-solid fa-qrcode" href="index.html"style="color: #ffffff;"></i></a> 
+        <a class="navbar-brand" href="index.html">QRGEN</a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id ="navbarTogglerDemo01">
+       <ul class="navbar-nav ms-auto">
+        <li class="nav-text">
+            <a class="nav-link" href="how.html">HOW?</a>
+            <li class="nav-text">
+               <a class="nav-link" href="contactus.html">Contact Me</a>
+           </li>
+       </ul>
+      
+       </div>
+      </nav>
+
+    </section>
+    <div class="content-container">
+    <div class="qr-box">
+        <div class="qr-head">
+            <h1 class="qr-head"><span class="auto-type"></span></h1>
+        </div>
+        <div class="qr-subtext">
+            <h5>Hello!! Welcome to our website.Please enter an URL to create a qrcode.</h5>
+            <form id="url-form">
+                <label for="url-input">Enter URL:</label>
+                <input type="text" id="url-input" name="url" placeholder="https://example.com">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        </div>
+        <div class="image-container">
+            <!--<img src="images/download.png" alt="qrcode" class="image-item">-->
+            <!--<img src="images/download.png" alt="qrcode2" class="image-item">-->
+            <img src="5228739.jpg" alt="phone_mock" class="image-item">
+
+
+
+        </div>
+    </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+      <script>
+        var typed = new Typed(".auto-type",{
+            strings: ["QRCODE GENERATOR..."],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        })
+      </script>
+   
+
+        <footer id="footer">
+            <a href=""><i class="fa-brands fa-instagram" ></i></a>
+            <a href="http://www.linkedin.com/in/venusai-yalamanchili/"><i class="fa-brands fa-linkedin-in"></i></a>
+        
+            <p class="copy">Venusai Yalamanchili</p>
+        
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

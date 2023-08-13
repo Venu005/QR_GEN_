@@ -1,0 +1,254 @@
+
+@font-face{
+    font-family: "simplifica";
+    src: url('simplifica.ttf');
+}
+.navbar{
+    padding : 0 0 4.5rem;
+}
+.navbar-brand{
+    font-family: 'Ubuntu', sans-serif;
+    font-size : 7.2rem;
+    margin-left: 16px; 
+    color: #ffffff;
+
+}
+.fa-solid{
+    font-size: 2.2rem;
+}
+.brand-container {
+    display: flex;
+    align-items: center;
+    padding: 10px; 
+}
+#title{
+    background-color: #3498db;
+}
+.navbar-toggler-icon {
+    color: #ffffff;
+}
+body {
+    background-color: #f2f2f2;
+    color: #333333;
+}
+@media(min-width:769px){
+.content-container {
+    display: flex;
+    /*margin-top: 50px;*/
+    justify-content: space-between ;
+}
+
+.qr-box {
+    flex: 1;
+    background-color:white; 
+    color:black; 
+    /*text-align:left;*/
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.qr-head {
+    font-family: 'simplifica', sans-serif;
+    font-size:  88px; 
+    /*margin-top: 60px;*/
+    margin-bottom: 10px; 
+    /*margin-left: 20px;*/
+}
+
+.qr-subtext {
+    font-size: 18px; 
+    /*margin-left: 35px;
+    padding-right: 70px;*/
+    margin-bottom:20px;
+
+}
+.image-container{
+    /*margin-top: 170px;
+    margin-right: 150px;
+    margin-left: 400px;*/
+    flex: 1;
+    display: flex;
+    justify-content: center;
+   /* align-items: flex-start;*/
+   align-items: center;
+}
+.image-item{
+    max-height: 75%;
+    max-width: 50%;
+    margin: 0 20px;
+    
+}
+
+#url-form {
+    margin-top: 20px; 
+}
+
+#url-input {
+    width: 100%;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#url-input:focus {
+    outline: none;
+    border-color: #3498db; /* Highlight border color on focus */
+}
+
+#url-form button {
+    
+    padding: 8px 12px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#url-form button:hover {
+    background-color: #217dbb; /* Darker color on hover */
+}
+}
+#footer{
+    background-color: #fff;
+    text-align: center;
+    padding-top: 55px;
+    margin-top: auto;
+
+}
+#footer a {
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 24px;
+  }
+  
+  #footer .fa-instagram {
+    color: #E1306C; /* Instagram color */
+  }
+  
+  #footer .fa-linkedin-in {
+    color: #0077B5; /* LinkedIn color */
+  }
+  
+  .copy {
+    color: white;
+    margin-top: 10px;
+  }
+.copy{
+    
+    color: #8f8f8f;
+}
+.fa-brands{
+    padding-right: 10px;
+}
+/*mobile version */
+/* Media query for mobile layout */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .qr-box {
+        background-color: #f2f2f2;
+        color:black;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .qr-head {
+        font-family: 'simplifica', sans-serif;
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+
+    .qr-subtext {
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+
+    #url-form {
+        margin-top: 10px;
+    }
+
+    #url-input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    #url-input:focus {
+        outline: none;
+        border-color: #3498db;
+    }
+
+    #url-form button {
+        width: 100%;
+        padding: 8px 12px;
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    #url-form button:hover {
+        background-color: #217dbb;
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-item {
+        max-width: 150px; /* Adjust the value to your preference */
+        margin: 10px; /* Add spacing between images */
+    }
+}
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333333;
+    transition: opacity 0.75s, visibility 0.75s;
+  }
+  
+  .loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #009578;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+  }
+  
+  @keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  

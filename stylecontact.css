@@ -1,0 +1,196 @@
+@font-face{
+    font-family: "simplifica";
+    src: url('simplifica.ttf');
+}
+.navbar{
+    padding : 0 0 4.5rem;
+}
+.navbar-brand{
+    font-family: 'Ubuntu', sans-serif;
+    font-size : 7.2rem;
+    margin-left: 16px; 
+    color: #ffffff;
+
+}
+.fa-solid{
+    font-size: 2.2rem;
+}
+.brand-container {
+    display: flex;
+    align-items: center;
+    padding: 10px; 
+}
+#title{
+    background-color: #3498db;
+}
+.navbar-toggler-icon {
+    color: #ffffff;
+}
+body {
+    background-color: #f2f2f2;
+    color: #333333;
+}
+.qr-box {
+    background-color: #f2f2f2;
+    color:black;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.qr-head {
+    font-family: 'simplifica', sans-serif;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.qr-subtext {
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: "simplifica", sans-serif;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form form input[type="text"],
+.contact-form form input[type="email"],
+.contact-form form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.contact-form form button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.contact-form form button:hover {
+    background-color: #217dbb;
+}
+#footer{
+    background-color: #fff;
+    text-align: center;
+    padding-top: 55px;
+    margin-top: auto;
+
+}
+#footer a {
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 24px;
+  }
+  
+  #footer .fa-instagram {
+    color: #E1306C; /* Instagram color */
+  }
+  
+  #footer .fa-linkedin-in {
+    color: #0077B5; /* LinkedIn color */
+  }
+  
+  .copy {
+    color: white;
+    margin-top: 10px;
+  }
+.copy{
+    
+    color: #8f8f8f;
+}
+.fa-brands{
+    padding-right: 10px;
+}
+/*mobile version */
+/* Media query for mobile layout */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .qr-box {
+        background-color: #f2f2f2;
+        color:black;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .qr-head {
+        font-family: 'simplifica', sans-serif;
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+
+    .qr-subtext {
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+
+    #url-form {
+        margin-top: 10px;
+    }
+
+    #url-input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    #url-input:focus {
+        outline: none;
+        border-color: #3498db;
+    }
+
+    #url-form button {
+        width: 100%;
+        padding: 8px 12px;
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    #url-form button:hover {
+        background-color: #217dbb;
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-item {
+        max-width: 150px; /* Adjust the value to your preference */
+        margin: 10px; /* Add spacing between images */
+    }
+}
+
+
